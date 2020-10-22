@@ -1,18 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to JTCC"/>
-  <TestComponent header="Test Header" body="Test body" />
+  <img alt="JTCC logo" src="./assets/logo.png">
+  <Header msg="Welcome to the JTCC Programming Club"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import TestComponent from './components/TestComponent.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    TestComponent
+    Header
   }
 }
 </script>

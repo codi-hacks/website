@@ -76,6 +76,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
         <br />
         <a href="https://github.com/jaythomas">Jay Thomas</a>
       </td>
+      <td align="center" width="160px">
+        <img src="https://avatars.githubusercontent.com/supershadowplay?s=120">
+        <br />
+        <a href="https://github.com/supershadowplay">Trevor Corcoran</a>
+      </td>
     </tr>
   </tbody>
 </table>

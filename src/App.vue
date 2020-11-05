@@ -1,15 +1,18 @@
 <template>
   <img alt="JTCC logo" src="./assets/logo.png">
   <Header msg="Welcome to the JTCC Programming Club"/>
+  <GoogleForm/>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import GoogleForm from './components/GoogleForm.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    GoogleForm
   }
 }
 </script>

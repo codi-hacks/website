@@ -2,9 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>This website is the main project of our club.
-      If you would like to learn more, please email our
-      club head at email@email.com</p>
-    
+      If you would like to learn more, please visit our
+      temporary site <a href=http://jtccprogramming.club> here. </a> </p>
+
 
   </div>
 </template>
@@ -30,10 +30,6 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
-}
-
 p {
   align: left;
 }

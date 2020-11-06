@@ -1,15 +1,17 @@
 <template>
   <img alt="JTCC logo" src="./assets/logo.png">
   <Header msg="Welcome to the JTCC Programming Club"/>
+<darkmode/>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-
+import darkmode from './components/darkmode.vue'
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    darkmode
   }
 }
 </script>

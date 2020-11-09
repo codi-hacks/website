@@ -8,7 +8,7 @@ a {
 }
 
 /* This is the Darkmode Class to be used in the body when dark mode is turned on */
-.dark-mode * {
+ * .dark-mode {
   background-color: black;
   color: white;
 }

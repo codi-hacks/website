@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #c0f0f7;
   color: black;
 }
 
@@ -9,7 +9,7 @@ a {
 
 /* This is the Darkmode Class to be used in the body when dark mode is turned on */
  * .dark-mode {
-  background-color: black;
+  background-color: #050a30;
   color: white;
 }
 

@@ -11,7 +11,7 @@ export default {
   name: 'App',
   components: {
     Header,
-    darkmode
+    Darkmode
   }
 }
 </script>

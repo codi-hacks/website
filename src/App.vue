@@ -1,6 +1,6 @@
 <template>
-<img v-if="darkMode" alt="JTCC logo" src="./assets/logoDark.png?" width=500>
-<img v-else alt="JTCC logo" src="./assets/logoLight.png?" width=500>
+<img v-if="darkMode" alt="JTCC logo" src="./assets/logoDark.png?" style="width:40%">
+<img v-else alt="JTCC logo" src="./assets/logoLight.png?" style="width:40%">
 <Header msg="Welcome to the JTCC Programming Club" />
 <button @click="darkMode = !darkMode" class=buttonLight>TOGGLE DARK/LIGHT IMAGE TEST</button><br>
 <darkmode />

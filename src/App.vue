@@ -1,7 +1,9 @@
 <template>
-  <img alt="JTCC logo" src="./assets/logo.png">
-  <Header msg="Welcome to the JTCC Programming Club"/>
-<darkmode/>
+<img v-if="darkMode" alt="JTCC logo" src="./assets/logoDark.png?" width=500>
+<img v-else alt="JTCC logo" src="./assets/logoLight.png?" width=500>
+<Header msg="Welcome to the JTCC Programming Club" />
+<button @click="darkMode = !darkMode" class=buttonLight>TOGGLE DARK/LIGHT IMAGE TEST</button><br>
+<darkmode />
 </template>
 
 <script>
@@ -12,7 +14,12 @@ export default {
   components: {
     Header,
     Darkmode
-  }
+  },
+  data() {
+    return {
+      darkMode: false
+    }
+  },
 }
 </script>
 

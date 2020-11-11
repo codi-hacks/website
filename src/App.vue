@@ -4,15 +4,18 @@
 <Header msg="Welcome to the JTCC Programming Club" />
 <button @click="darkMode = !darkMode" class=buttonLight>TOGGLE DARK/LIGHT IMAGE TEST</button><br>
 <darkmode />
+<GoogleForm/>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import GoogleForm from './components/GoogleForm.vue'
 import Darkmode from './components/Darkmode.vue'
 export default {
   name: 'App',
   components: {
     Header,
+    GoogleForm,
     Darkmode
   },
   data() {

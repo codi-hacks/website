@@ -1,9 +1,9 @@
 <template>
 <img v-if="darkMode" alt="JTCC logo" src="./assets/logoDark.png?" style="width:40%">
-<img v-else alt="JTCC logo" src="./assets/logoLight.png?" style="width:40%">
-<Header msg="Welcome to the JTCC Programming Club" />
-<button @click="darkMode = !darkMode" class=buttonLight>TOGGLE DARK/LIGHT IMAGE TEST</button><br>
+<img v-else alt="JTCC logo" src="./assets/logoLight.png?" style="width:40%"><br>
 <darkmode />
+<button @click="darkMode = !darkMode" class=buttonLight>TOGGLE DARK/LIGHT IMAGE TEST</button><br>
+<Header msg="Welcome to the JTCC Programming Club" />
 <GoogleForm/>
 </template>
 

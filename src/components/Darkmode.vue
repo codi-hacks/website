@@ -1,5 +1,5 @@
 <!--This is the Function and button to toggle Darkmode-->
-<script> 
+<script>
 
 export default {
   data() {

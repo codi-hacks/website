@@ -1,28 +1,32 @@
 <template>
-<img v-if="darkMode" alt="JTCC logo" src="./assets/logoDark.png?" style="width:40%">
-<img v-else alt="JTCC logo" src="./assets/logoLight.png?" style="width:40%"><br>
-<darkmode />
-<button @click="darkMode = !darkMode" class=buttonLight>TOGGLE DARK/LIGHT IMAGE TEST</button><br>
-<Header msg="Welcome to the JTCC Programming Club" />
-<GoogleForm/>
+  <Header :dark-mode="darkMode" />
+  <GoogleForm/>
+  <Footer :darkMode="darkMode" @update:darkMode="toggleDarkMode" />
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import GoogleForm from './components/GoogleForm.vue'
-import Darkmode from './components/Darkmode.vue'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import GoogleForm from './components/GoogleForm'
+
 export default {
   name: 'App',
   components: {
     Header,
-    GoogleForm,
-    Darkmode
+    Footer,
+    GoogleForm
   },
   data() {
     return {
       darkMode: false
     }
   },
+  methods: {
+    toggleDarkMode(value) {
+      this.darkMode = value
+      document.body.classList.toggle('dark-mode')
+    }
+  }
 }
 </script>
 

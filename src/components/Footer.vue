@@ -1,9 +1,11 @@
 <template>
   <div class="container">
-    <ToggleSwitch
-      :value="darkMode"
-      @update:value="toggleDarkMode"
-      />
+    <div class="switch">
+      <ToggleSwitch
+        :value="darkMode"
+        @update:value="toggleDarkMode"
+        />
+    </div>
   </div>
 </template>
 
@@ -31,9 +33,20 @@ export default {
 
 <style scoped>
 .container {
-  background: black;
-  height: 80px;
-  padding: 4px;
+  opacity: 90%;
+  height: 34px;
+  padding: 6px;
   width: 100%;
+
+  /* Fix position on bottom of screen */
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+}
+
+.switch {
+  float: left;
 }
 </style>

@@ -1,10 +1,22 @@
+:root {
+  --link-color: #27a1f0;
+}
+
 body {
   background-color: #c0f0f7;
   color: black;
 }
 
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 60px;
+  text-align: center;
+}
+
 a {
-  color: blue;
+  color: var(--link-color);
 }
 
 /* This is the Darkmode Class to be used in the body when dark mode is turned on */
@@ -38,15 +50,15 @@ button {
 .buttonLight:hover {
   background-color: #050a30;
   color: white;
-  }
+}
 
 .buttonDark {
   background-color: #050a30;
   color: white;
   border: 2px solid #008CBA;
-  }
+}
 
 .buttonDark:hover {
   background-color: #008CBA;
   color: white;
-  }
+}

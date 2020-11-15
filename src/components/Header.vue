@@ -1,15 +1,11 @@
 <template>
   <div>
-    <img v-if="darkMode" alt="JTCC logo" src="../assets/logoDark.png?">
-    <img v-else alt="JTCC logo" src="../assets/logoLight.png?">
-    <br>
-    <div class="hello">
+    <img v-show="darkMode" alt="JTCC logo" src="../assets/logoDark.png">
+    <img v-show="!darkMode" alt="JTCC logo" src="../assets/logoLight.png">
+    <br />
+    <div>
       <h1>Welcome to the JTCC Programming Club</h1>
-      <p>This website is the main project of our club.
-        If you would like to learn more, please visit our
-        temporary site <a href=http://jtccprogramming.club> here. </a> </p>
-
-
+      <p>This website is the main project of our club.</p>
     </div>
   </div>
 </template>
@@ -27,10 +23,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-img {
-  width: 40%;
+@media screen and (min-width: 0px) {
+  img {
+    width: 100%;
+  }
 }
-p {
-  align: left;
+@media screen and (min-width: 700px) {
+  img {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 950px) {
+  img {
+    width: 50%;
+  }
 }
 </style>

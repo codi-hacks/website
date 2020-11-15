@@ -1,36 +1,41 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>This website is the main project of our club.
-      If you would like to learn more, please visit our
-      temporary site <a href=http://jtccprogramming.club> here. </a> </p>
-
-
+  <div>
+    <img v-show="darkMode" alt="JTCC logo" src="../assets/logoDark.png">
+    <img v-show="!darkMode" alt="JTCC logo" src="../assets/logoLight.png">
+    <br />
+    <div>
+      <h1>Welcome to the JTCC Programming Club</h1>
+      <p>This website is the main project of our club.</p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    msg: String
+    darkMode: {
+      type: Boolean,
+      required: true
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+@media screen and (min-width: 0px) {
+  img {
+    width: 100%;
+  }
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+@media screen and (min-width: 700px) {
+  img {
+    width: 75%;
+  }
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-p {
-  align: left;
+@media screen and (min-width: 950px) {
+  img {
+    width: 50%;
+  }
 }
 </style>

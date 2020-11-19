@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .container {
-  opacity: 90%;
+  opacity: 0.9;
   height: 34px;
   padding: 6px;
   width: 100%;

@@ -1,6 +1,6 @@
 # website
 
-The (work-in-progress) JTCC Programming Club website
+The JTCC Programming Club website
 
 <!-- Run "npx doctoc README.md" to re-generate this table of contents -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

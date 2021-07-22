@@ -5,7 +5,9 @@
     <br />
     <div>
       <h1>Welcome to the JTCC Programming Club</h1>
-      <p>This website is the main project of our club.</p>
+      <p>This website was one of the projects developed in our club.</p>
+      <p>We are currently working on a custom <a href="https://weather.codingcorner.club/">weather station</a> as our main project.</p>
+      <br>
     </div>
   </div>
 </template>

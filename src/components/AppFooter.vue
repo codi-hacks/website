@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import ToggleSwitch from '@/components/ToggleSwitch.vue'
+import ToggleSwitch from './ToggleSwitch.vue'
 
 export default {
   components: {

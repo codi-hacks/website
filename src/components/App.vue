@@ -5,9 +5,9 @@
 </template>
 
 <script>
-import AppHeader from '@/components/AppHeader.vue'
-import AppFooter from '@/components/AppFooter.vue'
-import GoogleForm from '@/components/GoogleForm.vue'
+import AppHeader from './AppHeader.vue'
+import AppFooter from './AppFooter.vue'
+import GoogleForm from './GoogleForm.vue'
 
 export default {
   name: 'App',

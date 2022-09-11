@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "serve": "vite preview",
     "build": "vite build",
-    "lint": "eslint src/**/*.{js,vue} "
+    "dev": "vite",
+    "lint": "eslint **/*.{js,vue}",
+    "serve": "vite",
+    "start": "vite"
   },
   "dependencies": {
-    "core-js": "^3.25.1",
     "vue": "^3.2.39"
   },
   "devDependencies": {

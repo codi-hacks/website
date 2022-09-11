@@ -1,5 +1,6 @@
 <template>
   <Header :dark-mode="darkMode" />
+  <Projects/>
   <GoogleForm/>
   <Footer :darkMode="darkMode" @update:darkMode="toggleDarkMode" />
 </template>
@@ -7,6 +8,7 @@
 <script>
 import Header from './Header'
 import Footer from './Footer'
+import Projects from './Projects'
 import GoogleForm from './GoogleForm'
 
 export default {
@@ -14,6 +16,7 @@ export default {
   components: {
     Header,
     Footer,
+    Projects,
     GoogleForm
   },
   data() {

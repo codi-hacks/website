@@ -1,20 +1,20 @@
 <template>
   <Header :dark-mode="darkMode" />
-  <Shelf/>
+  <CardContainer/>
   <Footer :darkMode="darkMode" @update:darkMode="toggleDarkMode" />
 </template>
 
 <script>
 import Header from './Header'
 import Footer from './Footer'
-import Shelf from './Shelf'
+import CardContainer from './CardContainer'
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
-    Shelf
+    CardContainer
   },
   data() {
     return {

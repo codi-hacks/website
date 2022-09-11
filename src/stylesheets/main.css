@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+
 :root {
   --link-color: #27a1f0;
 }
@@ -8,11 +10,16 @@ body {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Comfortaa', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 60px;
+  font-size: 1.2em;
+  margin-top: 40px;
   text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Patua One';
 }
 
 a {

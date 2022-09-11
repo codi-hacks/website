@@ -1,20 +1,20 @@
 <template>
   <Header :dark-mode="darkMode" />
-  <GoogleForm/>
+  <CardContainer/>
   <Footer :darkMode="darkMode" @update:darkMode="toggleDarkMode" />
 </template>
 
 <script>
 import Header from './Header'
 import Footer from './Footer'
-import GoogleForm from './GoogleForm'
+import CardContainer from './CardContainer'
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
-    GoogleForm
+    CardContainer
   },
   data() {
     return {

@@ -11,7 +11,7 @@
       It is mostly complete, yet it lacks levels!
       If you are interested in helping, please open an issue on our GitHub.
     </Card>
-    
+
     <Card class="flex-item" title="Weather Station" image_name="weather_station.png" website="https://weather.codihacks.org/">
       A <a href="https://github.com/codi-hacks/weather-station">weather station web app</a>.
       It features a physical weather station, an API server written in Rust, and a web app frontend written in Vue.
@@ -33,17 +33,17 @@ export default {
 .flex-container {
   display: flex;
   flex-flow: column wrap;
+  gap: 1em;
+  margin: 0 2em;
   justify-content: center;
 }
 
 .flex-item {
+  border-top: solid black 2px;
   flex-basis: 100%;
   flex-grow: 1;
   flex-shrink: 0;
   min-height: 20em;
-
-  padding-top: 20px;
-  border-top: solid black 2px;
 }
 
 .flex-item:last-child {

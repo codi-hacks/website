@@ -1,10 +1,10 @@
 <template>
   <div class="main">
 
-    <img :src="require(`@/assets/${image_name}`)"/> 
+    <img :src="require(`@/assets/${image_name}`)"/>
 
     <div class="body">
-      <h2> {{ title }} </h2>
+      <h2 class="title"> {{ title }} </h2>
       <slot></slot>
       <br/>
     </div>
@@ -21,12 +21,12 @@ export default {
 
 <style scoped>
 .main {
-  margin: 15px;
+  background-color: white;
   text-align: left;
 }
 
 .body {
-  font-size: 1.5em;
+  margin: 0 2em;
 }
 
 @media screen and (orientation: landscape) {

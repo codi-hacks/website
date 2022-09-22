@@ -1,14 +1,35 @@
 <template>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <div>
-    <img v-show="darkMode" alt="JTCC logo" src="../assets/logoDark.png">
-    <img v-show="!darkMode" alt="JTCC logo" src="../assets/logoLight.png">
-    <br />
-    <div>
-      <h1>Welcome to the JTCC Programming Club</h1>
-      <p>This website was one of the projects developed in our club.</p>
-      <p>We are currently working on a custom <a href="https://weather.codingcorner.club/">weather station</a> as our main project.</p>
+    <header>
+      <div class="container">
+        <div class="content">
+          <h1>Codi Hacks</h1>
+          <hr>
+          <p>Projects</p>
+          <hr>
+          <p>
+            <a href="https://github.com/codi-hacks">
+              <i class="fa-brands fa-github" alt="github"></i>
+            </a>
+          </p>
+          <p>
+            <a href="https://discord.gg/xKgzfkyaha">
+              <i class="fa-brands fa-discord" alt="discord"></i>
+            </a>
+          </p>
+          <hr>
+          <p>Navigation</p>
+        </div>
+      </div>
+
+
+      <br />
+    </header>
+      <img v-show="darkMode" alt="JTCC logo" src="../assets/logoDark.png">
+      <img v-show="!darkMode" alt="JTCC logo" src="../assets/logoLight.png">
       <br>
-    </div>
   </div>
 </template>
 
@@ -39,5 +60,24 @@ export default {
   img {
     width: 50%;
   }
+}
+
+header {
+  backdrop-filter: grayscale(0.25) blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+hr{
+  opacity: .25;
+}
+
+.container{
+  height: 80%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.content{
+  display: flex;
 }
 </style>

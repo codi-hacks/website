@@ -1,19 +1,19 @@
 <template>
-  <Header :dark-mode="darkMode" />
+  <AppHeader :dark-mode="darkMode" />
   <Projects :dark-mode="darkMode" />
-  <Footer :darkMode="darkMode" @update:darkMode="toggleDarkMode" />
+  <AppFooter :darkMode="darkMode" @update:darkMode="toggleDarkMode" />
 </template>
 
 <script>
-import Header from './Header'
-import Footer from './Footer'
+import AppHeader from './AppHeader.vue'
+import AppFooter from './AppFooter.vue'
 import Projects from './Projects'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer,
+    AppHeader,
+    AppFooter,
     Projects
   },
   data() {

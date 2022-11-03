@@ -7,7 +7,7 @@
 <script>
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
-import Projects from './Projects'
+import Projects from './Projects.vue'
 
 export default {
   name: 'App',

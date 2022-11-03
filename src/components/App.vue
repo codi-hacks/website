@@ -1,20 +1,20 @@
 <template>
   <AppHeader :dark-mode="darkMode" />
-  <GoogleForm/>
+  <Projects :dark-mode="darkMode" />
   <AppFooter :darkMode="darkMode" @update:darkMode="toggleDarkMode" />
 </template>
 
 <script>
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
-import GoogleForm from './GoogleForm.vue'
+import Projects from './Projects.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppFooter,
-    GoogleForm
+    Projects
   },
   data() {
     return {

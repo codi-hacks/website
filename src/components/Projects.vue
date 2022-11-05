@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <ProjectCard title="Weather Station" image="../assets/weather_station.png">
+    <ProjectCard title="Weather Station" :image="weatherStationUrl">
       This is our <a href="https://weather.codihacks.org/" target="_blank">weather station</a> web app project!
       It features a physical weather station, an API server written in Rust, and a web app frontend written in Vue.
 
     </ProjectCard>
-    <ProjectCard title="Space Race" image="../assets/space_race.png">
+    <ProjectCard title="Space Race" :image="spaceRaceUrl">
       This is our Spaceship Race project! It is a spaceship game created with the Lua framework <a href="https://love2d.org/" target="_blank">Love2D</a>.
           It lacks levels, so if you are interested in helping, please open an issue on our GitHub.
     </ProjectCard>
@@ -14,6 +14,8 @@
 
 <script setup>
 import ProjectCard from './ProjectCard.vue'
+import weatherStationUrl from '../assets/weather_station.png'
+import spaceRaceUrl from '../assets/space_race.png'
 </script>
 
 <style scoped>

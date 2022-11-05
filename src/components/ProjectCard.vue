@@ -1,13 +1,13 @@
 <template>
   <div class="project">
     <h1 class="project-title">{{ title }}</h1>
-    <img class="project-image" :alt="title" :src="imageUrl">
+    <img class="project-image" :alt="title" :src="image">
     <p class="project-text"><slot /></p>
   </div>
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   title: {
     type: String,
     required: true
@@ -17,8 +17,6 @@ const props = defineProps({
     required: true
   }
 })
-
-const imageUrl = new URL(props.image, import.meta.url).href
 </script>
 
 <style scoped>
